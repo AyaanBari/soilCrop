@@ -76,14 +76,11 @@ WSGI_APPLICATION = 'soilCrop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bxxoesougznzunxc581s',
-        'USER': 'uzcxwoedem8lzjbf',
-        'PASSWORD': 'ojHKrsBYT1sqnh11HxZh',
-        'HOST': 'bxxoesougznzunxc581s-mysql.services.clever-cloud.com',
+        'NAME': 'bmckzq8k0e9tbslyqn5b',
+        'USER': 'uqsjbknaj7asi7mx',
+        'PASSWORD': 'vpxcimW1b2aBRT2IIAOm',
+        'HOST': 'bmckzq8k0e9tbslyqn5b-mysql.services.clever-cloud.com',
         'PORT': '3306',
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        },
     }
 }
 
