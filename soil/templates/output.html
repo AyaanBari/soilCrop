@@ -15,7 +15,8 @@
 <body>          
     <div class="container">
         <h1>{{ crop }}</h1>
-      
+        <img src="{% static 'images/' %}{{ filename }}.png">
+
         <p><span> Description :</span> {{ description }}
             <br>
             <hr>

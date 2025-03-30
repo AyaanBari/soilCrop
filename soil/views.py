@@ -77,7 +77,7 @@ def recommend(request):
         # Prepare context for rendering
         context = {
             "filename": filename,
-            "crop": crop_name,
+            "crop": crop.get("NAME", "N/A"),
             "description": crop.get("DESCRIPTION", "No description available"),
             "types": crop.get("TYPE", "N/A"),
             "disease": crop.get("DISEASES", "N/A"),
