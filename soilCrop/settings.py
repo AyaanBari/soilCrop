@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'soil',  # Ensure this is correct
+    'soil', 
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,12 +75,15 @@ WSGI_APPLICATION = 'soilCrop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'HOST': 'bxxoesougznzunxc581s-mysql.services.clever-cloud.com',
-        'PORT': '3306', 
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bxxoesougznzunxc581s',
         'USER': 'uzcxwoedem8lzjbf',
-        'PASSWORD': '5tZ2v8G7WqX8Wc5Y'
+        'PASSWORD': 'ojHKrsBYT1sqnh11HxZh',
+        'HOST': 'bxxoesougznzunxc581s-mysql.services.clever-cloud.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
     }
 }
 
