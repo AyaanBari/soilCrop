@@ -9,45 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
-    <title>FarmEasy</title>
+    <title>cropEasy.AI</title>
     <link rel="stylesheet" type="text/css" href="{% static 'output.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7D4pr2IK8RZ9hBhxUF/anpQskvXusvfa0b" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76A2YpaboKLrQ2Bz4M2Kk9e3hb5gU2yE3zYjz9f6pUOmJmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>          
-    <div class="container">
-        <h1>{{ crop }}</h1>
-        <img src="{% static 'images/' %}{{ filename }}.png">
-
-        <p><span> Description :</span> {{ description }}
-            <br>
-            <hr>
-            <span> Type :</span> {{ types }}
-            <br>
-            <hr>
-            <span> Disease :</span> {{ disease }}
-            <br>
-            <hr>
-            <span>Companion :</span> {{ companion }}
-            <br>
-            <hr>
-            <span>Pests :</span> {{ pests }}
-            <br>
-            <hr>
-            <span> Fertilizer :</span> {{ fertilizer }}
-            <br>
-            <hr>
-            <span>Tips :</span> {{ tips }}
-            <br>
-            <hr>
-            <span>Spacing :</span> {{ spacing }}
-            <br>
-            <hr>
-            <span>Watering :</span> {{ watering }}
-            <br>
-            <hr>
-            <span>Storage :</span> {{ storage }}
+<body>  
+    <div class="container mt-4">
+        <h1 class="text-center">{{ crop }}</h1>
+        <div class="text-center">
+            <img src="{% static 'images/' %}{{ filename }}.png" class="img-fluid" alt="Crop Image">
+        </div>
+        <p class="mt-4">
+            <span>Description:</span> {{ description }}
+            <br><hr>
+            <span>Type:</span> {{ types }}
+            <br><hr>
+            <span>Disease:</span> {{ disease }}
+            <br><hr>
+            <span>Companion:</span> {{ companion }}
+            <br><hr>
+            <span>Pests:</span> {{ pests }}
+            <br><hr>
+            <span>Fertilizer:</span> {{ fertilizer }}
+            <br><hr>
+            <span>Tips:</span> {{ tips }}
+            <br><hr>
+            <span>Spacing:</span> {{ spacing }}
+            <br><hr>
+            <span>Watering:</span> {{ watering }}
+            <br><hr>
+            <span>Storage:</span> {{ storage }}
+            <br><hr>
+            <div class="d-flex justify-content-between align-items-center p-3"></div>
+                <a href="{% url 'home' %}" id="rhome" class="btn btn-light text-green" style="background-color: green; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;">Home</a>
+                <a href="{% url 'form' %}" id="recom" class="btn btn-light text-green ms-auto" style="background-color: green; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;">Predict Another</a>
+            </div>
+        </div>
         </p>
     </div>
-    
-   
+
+
+    </div>
 </body>
-</html>
+
